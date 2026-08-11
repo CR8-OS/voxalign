@@ -74,8 +74,9 @@ Unresolved blocks are labelled `S?`.
 
 ## Support
 
-VoxAlign is free and open source (MIT). If it saved you time, tips are welcome via
-the Sponsor button on this repo. Not required, always appreciated.
+VoxAlign is free and open source (MIT). If it saved you time, tips are welcome at
+**[ko-fi.com/cj48744](https://ko-fi.com/cj48744)** (or the Sponsor button on this
+repo). Not required, always appreciated.
 
 ## License
 
