@@ -9,7 +9,7 @@
 
 I've spent the last few years building podcast-production tooling for brands like IBM, which is a polite way of saying I've spent a lot of time staring at the parts of the process that make even seasoned producers quietly lose their minds. Most of those parts are invisible. A handoff here, a file format there, a single step that quietly eats an afternoon. Transcripts are one of the worst offenders, and speaker attribution is the piece that finally broke me.
 
-Here's the problem. You record every guest on a separate mic, everything is clean and beautifully isolated, life is good. Then you cut the episode, flatten it to a final mix, and all that lovely per-channel separation evaporates. You are left holding a pristine SRT and no reliable idea of who actually said what. I burned through a lot of trials, tribulations, and mediocre workarounds trying to pull a clean, attributed transcript back out of that final file.
+Here's the problem: You record every guest on a separate mic, everything is clean and beautifully isolated, life is good. Then you cut the episode, flatten it to a final mix, and all that lovely per-channel separation evaporates. You are left holding a pristine SRT and no reliable idea of who actually said what. I burned through a lot of trials, tribulations, and mediocre workarounds trying to pull a clean, attributed transcript back out of that final file.
 
 VoxAlign is the tool I wanted to exist. It takes the raw per-mic capture from Riverside, or wherever you record your channels, transcribes each channel on its own, and reconciles those transcripts against your final edited SRT. The channels know who is speaking. The edit knows the final words and timing. VoxAlign just marries the two.
 
