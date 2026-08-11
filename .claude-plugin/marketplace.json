@@ -10,11 +10,16 @@
   "plugins": [
     {
       "name": "voxalign",
-      "source": ".",
+      "source": "./plugins/voxalign",
       "description": "Voice-attribution SRT reconciler: per-channel mics plus an edited SRT to an accurate speaker-attributed transcript.",
       "version": "0.1.0",
       "category": "content",
-      "keywords": ["transcription", "srt", "speaker-attribution", "podcast"]
+      "keywords": [
+        "transcription",
+        "srt",
+        "speaker-attribution",
+        "podcast"
+      ]
     }
   ]
 }
