@@ -4,6 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/cj48744)
 [![Add to Claude](https://img.shields.io/badge/Cowork-add%20plugin-6E56CF)](#as-a-claude-plugin)
+[![MCP server](https://img.shields.io/badge/MCP-server-6E56CF)](#as-an-mcp-server-claude-code-cowork-ibm-bob-any-mcp-client)
+[![Works with IBM Bob](https://img.shields.io/badge/works%20with-IBM%20Bob-0530AD)](#as-an-mcp-server-claude-code-cowork-ibm-bob-any-mcp-client)
 
 **Voice-attribution SRT reconciler.** Turn per-channel (per-mic) recordings plus a final edited SRT into an accurate, speaker-attributed transcript.
 
@@ -52,7 +54,7 @@ The plugin hands Claude the VoxAlign skill, so it knows how to drive the stages.
 
 ### As an MCP server (Claude Code, Cowork, IBM Bob, any MCP client)
 
-VoxAlign also runs as an MCP server, exposing each stage as a tool.
+VoxAlign also runs as an MCP server, exposing each stage as a tool. Because it speaks MCP, the same server drops straight into Claude Code, Cowork, and IBM's Bob, or anything else that talks MCP.
 
 ```bash
 pip install "voxalign[mcp]"          # add [whisper] too for the transcribe tool
