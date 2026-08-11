@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "voxalign"
-version = "0.1.0"
+version = "0.2.0"
 description = "Voice-attribution SRT reconciler: turn per-channel mics + an edited SRT into an accurate speaker-attributed transcript."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -22,6 +22,7 @@ dependencies = ["numpy>=1.23", "scipy>=1.9"]
 
 [project.optional-dependencies]
 whisper = ["faster-whisper>=1.0"]
+mcp = ["mcp>=1.2"]
 dev = ["pytest>=7"]
 
 [project.urls]
@@ -30,6 +31,7 @@ Issues = "https://github.com/CR8-OS/voxalign/issues"
 
 [project.scripts]
 voxalign = "voxalign.cli:main"
+voxalign-mcp = "voxalign.mcp_server:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/voxalign"]

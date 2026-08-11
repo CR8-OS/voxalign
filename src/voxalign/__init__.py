@@ -10,4 +10,4 @@ produce an accurate, speaker-attributed transcript. Four stages:
 
 The invention is gate + reconcile + energy; transcription is swappable.
 """
-__version__ = "0.1.0"
+__version__ = "0.2.0"

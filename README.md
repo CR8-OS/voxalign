@@ -50,6 +50,26 @@ From Cowork or Claude Code, add the marketplace and install:
 
 The plugin hands Claude the VoxAlign skill, so it knows how to drive the stages. The transcription itself still runs through the pip package above, so install that too when you want turnkey processing.
 
+### As an MCP server (Claude Code, Cowork, IBM Bob, any MCP client)
+
+VoxAlign also runs as an MCP server, exposing each stage as a tool.
+
+```bash
+pip install "voxalign[mcp]"          # add [whisper] too for the transcribe tool
+```
+
+Register it with your client. For a `.mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "voxalign": { "command": "voxalign-mcp" }
+  }
+}
+```
+
+Tools: `voxalign_gate`, `voxalign_transcribe`, `voxalign_reconcile`, `voxalign_energy`, and `voxalign_run` (the whole pipeline). Same engine as the CLI and the plugin, so one codebase serves them all.
+
 ## Use
 
 Full pipeline (raw mics + edited SRT in, attributed transcript out):

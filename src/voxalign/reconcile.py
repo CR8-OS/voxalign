@@ -109,3 +109,20 @@ def write_transcript(blocks: list[dict], path: str, unknown: str = "S?") -> None
 
 def load_raw(path: str) -> list[dict]:
     return json.load(open(path, encoding="utf-8"))
+
+
+def parse_attributed(path: str, unknown: str = "S?") -> list[dict]:
+    """Parse a VoxAlign attributed transcript back into blocks (for the energy stage)."""
+    blocks = []
+    for chunk in open(path, encoding="utf-8").read().split("\n\n"):
+        ls = [l for l in chunk.split("\n") if l.strip()]
+        if len(ls) >= 2:
+            m = re.match(r"^(\S+):\s*(.*)$", ls[1])
+            spk, txt = m.group(1), m.group(2)
+            tags = {"energy": "[energy]" in ls[1], "inferred": "[inferred]" in ls[1],
+                    "confirmed": "[confirmed]" in ls[1]}
+            for t in (" [energy]", " [inferred]", " [confirmed]"):
+                txt = txt.replace(t, "")
+            blocks.append({"start": ls[0], "end": "", "text": txt,
+                           "spk": None if spk == unknown else spk, **tags})
+    return blocks

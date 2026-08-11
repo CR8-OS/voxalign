@@ -2,6 +2,13 @@
 
 All notable changes to VoxAlign are documented here.
 
+## [0.2.0] - 2026-08-11
+
+- MCP server (`voxalign-mcp`): exposes gate, transcribe, reconcile, energy, and the
+  full run as MCP tools, so any MCP client (Claude Code, Cowork, IBM Bob) can drive
+  VoxAlign. Optional extra: `pip install "voxalign[mcp]"`. Imports the package
+  directly, one codebase behind the CLI, the Claude plugin, and MCP.
+
 ## [0.1.0] - 2026-08-11
 
 Initial release.
