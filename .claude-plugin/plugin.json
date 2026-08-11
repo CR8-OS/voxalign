@@ -1,0 +1,10 @@
+{
+  "name": "voxalign",
+  "version": "0.1.0",
+  "description": "Voice-attribution SRT reconciler: turn per-channel mics plus an edited SRT into an accurate speaker-attributed transcript. Ships a skill that drives the voxalign CLI (gate, transcribe, reconcile, energy).",
+  "author": {
+    "name": "Christophe Jammet"
+  },
+  "license": "MIT",
+  "keywords": ["transcription", "srt", "speaker-attribution", "podcast", "captions", "multitrack", "whisper"]
+}
