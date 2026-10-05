@@ -7,6 +7,10 @@
 [![MCP server](https://img.shields.io/badge/MCP-server-6E56CF)](#as-an-mcp-server-claude-code-cowork-ibm-bob-any-mcp-client)
 [![Works with IBM Bob](https://img.shields.io/badge/works%20with-IBM%20Bob-0530AD)](#as-an-mcp-server-claude-code-cowork-ibm-bob-any-mcp-client)
 
+<p align="center">
+  <a href="https://ko-fi.com/cj48744"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"></a>
+</p>
+
 **Voice-attribution SRT reconciler.** Turn per-channel (per-mic) recordings plus a final edited SRT into an accurate, speaker-attributed transcript.
 
 I've spent the year or so (among other things) building AI-enabled process tooling for the likes of IBM, which is a polite way of saying I've spent a lot of time staring at the parts of content and media production processes that make even seasoned producers and editors quietly lose their minds. Most of those parts are invisible. A handoff here, a file format there, a single step that quietly eats an afternoon. Podcast transcripts are one of the worst offenders, and speaker attribution is the piece that finally broke me.
@@ -108,11 +112,17 @@ Output blocks carry a tag so you can see how each was decided: `[energy]` (loude
 
 It takes a village, so let's make it a nice one. Comment, star, share, fork it, and send your improvements. Issues and pull requests are all welcome, from a typo fix to a whole new transcription backend.
 
-## Support
+## If it saved you something
 
-VoxAlign is free and open source (MIT). If it saved you a headache and you feel like dropping a tip, buy me a coffee. Not required, always appreciated.
+This is free, MIT, and yours to fork. But the whole point is that an afternoon spent hand-labelling a transcript is an afternoon you do not get back, and this turns it into a command you run once. If VoxAlign gave you a couple of those back, and you feel like sharing time you were not expecting to have, there is a Ko-fi link below. Tips go into building more of these, because the invisible steps are everywhere and most of them are still done by hand.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/cj48744)
+If it got you nothing, you owe me nothing. Seems fair.
+
+<p align="center">
+  <a href="https://ko-fi.com/cj48744"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"></a>
+</p>
+
+More tools at [github.com/CR8-OS](https://github.com/CR8-OS).
 
 ## License
 
